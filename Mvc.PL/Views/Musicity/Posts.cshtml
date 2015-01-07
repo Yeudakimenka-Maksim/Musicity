@@ -1,0 +1,14 @@
+﻿@model Mvc.PL.ViewModels.TopicPage.TopicPageTopicViewModel
+
+@{
+    ViewBag.Title = "Musicity";
+}
+
+<div class="topic">
+    @Model.Name
+</div>
+
+@foreach (var post in Model.Posts)
+{
+    Html.RenderPartial("PostSummary", post);
+}

@@ -1,0 +1,18 @@
+﻿@model Mvc.PL.ViewModels.CategoriesPage.CategoriesPageCategoryViewModel
+
+<div class="category">
+    @Html.RouteLink(Model.Name, new { controller = "Musicity", action = "Topics", category = Model.Name })
+    @foreach (var topic in Model.Topics)
+    {
+        <div class="topic">
+            @Html.RouteLink(topic.Name, new { controller = "Musicity", action = "Posts", topic = topic.Name })
+            @*<p>Post count: @topic.PostCount</p>
+            @if (topic.PostCount > 0)
+            {
+                <div class="post">
+                    @topic.LastPost.Name by @topic.LastPost.Creator.Name on @topic.LastPost.CreationTime
+                </div>
+            }*@
+        </div>
+    }
+</div>
