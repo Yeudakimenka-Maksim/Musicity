@@ -18,17 +18,25 @@ namespace BLL.Services
             this.userRepository = userRepository;
         }
 
-        public IEnumerable<UserEntity> GetAllBllUsers()
+        public IEnumerable<UserEntity> GetAllUsers()
         {
-            //using (uow)
+            using (uow)
             {
                 return userRepository.GetAll().Select(user => user.ToBllUser());
             }
         }
 
-        public void CreateBllUser(UserEntity user)
+        public UserEntity GetUserByName(string name)
         {
-            //using (uow)
+            using (uow)
+            {
+                return userRepository.GetByName(name).ToBllUser();
+            }
+        }
+
+        public void CreateUser(UserEntity user)
+        {
+            using (uow)
             {
                 userRepository.Create(user.ToDalUser());
                 uow.Commit();

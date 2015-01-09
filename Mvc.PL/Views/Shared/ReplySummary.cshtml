@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Mvc.PL.ViewModels.PostPage.PostPageReplyViewModel>
+
+@foreach (var reply in Model)
+{
+    <div class="row">
+        @Html.DisplayFor(model => reply.WrittenTime) by @reply.Writer.Name
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            @Html.DisplayFor(model => reply.Content)
+        </div>
+    </div>
+}

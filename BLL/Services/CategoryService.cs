@@ -12,7 +12,7 @@ namespace BLL.Services
         private readonly ICategoryRepository categoryRepository;
         private readonly IUnitOfWork uow;
 
-        public CategoryService(IUnitOfWork uow, ICategoryRepository categoryRepository)
+        public CategoryService(ICategoryRepository categoryRepository, IUnitOfWork uow)
         {
             this.uow = uow;
             this.categoryRepository = categoryRepository;

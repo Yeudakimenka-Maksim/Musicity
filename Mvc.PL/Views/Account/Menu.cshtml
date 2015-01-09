@@ -1,0 +1,19 @@
+﻿@if (HttpContext.Current.User.Identity.IsAuthenticated)
+{
+    <ul>
+        <li>@HttpContext.Current.User.Identity.Name</li>
+        <li>@Html.ActionLink("Logoff", "LogOff", "Account")</li>
+    </ul>
+
+    if (HttpContext.Current.User.IsInRole("Admin"))
+    {
+        <h3>You are logged in as an administrator</h3>
+    }
+}
+else
+{
+    <ul>
+        <li>@Html.ActionLink("Login", "Login", "Account")</li>
+        <li>@Html.ActionLink("Register", "Register", "Account")</li>
+    </ul>
+}

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
 using DAL.Interface.DTO;
 using DAL.Interface.Repositories;
+using DAL.Mappers;
 using ORM.Entities;
 
 namespace DAL.Concrete
@@ -20,24 +20,19 @@ namespace DAL.Concrete
 
         public IEnumerable<DalUser> GetAll()
         {
-            return context.Set<User>().Select(user => new DalUser { Id = user.Id, Name = user.Name });
+            return context.Set<User>().Select(DalUserMapper.ToDalUser);
         }
 
-        //public DalUser GetById(int id)
-        //{
-        //    var ormUser = context.Set<User>().FirstOrDefault(user => user.Id == id);
-        //    return new DalUser { Id = ormUser.Id, Name = ormUser.Name };
-        //}
-
-        //public IEnumerable<DalUser> GetByPredicate(Expression<Func<DalUser, bool>> predicate)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public DalUser GetByName(string name)
+        {
+            return context.Set<User>()
+                .SingleOrDefault(user => user.Name.ToLower() == name.ToLower())
+                .ToDalUser();
+        }
 
         public void Create(DalUser entity)
         {
-            var ormUser = new User { Name = entity.Name, /*RoleId = dalUser.RoleId*/ };
-            context.Set<User>().Add(ormUser);
+            context.Set<User>().Add(entity.ToOrmUser());
         }
 
         public void Update(DalUser entity)

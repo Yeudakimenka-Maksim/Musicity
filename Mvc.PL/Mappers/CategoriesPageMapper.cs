@@ -23,7 +23,7 @@ namespace Mvc.PL.Mappers
                             LastPost = topic.Posts == null || !topic.Posts.Any()
                                 ? null
                                 : ToCategoriesPagePostViewModel(
-                                    topic.Posts.Single(post => post.CreationTime == topic.Posts.Max(p => p.CreationTime)))
+                                    topic.Posts.First(post => post.CreationTime == topic.Posts.Max(p => p.CreationTime)))
                         })
             };
         }

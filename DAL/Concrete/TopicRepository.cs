@@ -23,6 +23,13 @@ namespace DAL.Concrete
             return context.Set<Topic>().Select(DalTopicMapper.ToDalTopic);
         }
 
+        public DalTopic GetByName(string name)
+        {
+            return context.Set<Topic>()
+                .Single(topic => topic.Name.ToLower() == name.ToLower())
+                .ToDalTopic();
+        }
+
         public void Create(DalTopic entity)
         {
             throw new NotImplementedException();

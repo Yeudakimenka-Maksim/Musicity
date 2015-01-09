@@ -6,5 +6,6 @@ namespace BLL.Interface.Services
     public interface IPostService
     {
         IEnumerable<PostEntity> GetAllPosts();
+        PostEntity GetPostByName(string name);
     }
 }

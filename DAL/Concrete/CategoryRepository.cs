@@ -23,6 +23,13 @@ namespace DAL.Concrete
             return context.Set<Category>().Select(DalCategoryMapper.ToDalCategory);
         }
 
+        public DalCategory GetByName(string name)
+        {
+            return context.Set<Category>()
+                .Single(category => category.Name.ToLower() == name.ToLower())
+                .ToDalCategory();
+        }
+
         public void Create(DalCategory entity)
         {
             throw new NotImplementedException();

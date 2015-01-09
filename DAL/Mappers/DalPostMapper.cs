@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using DAL.Interface.DTO;
 using ORM.Entities;
 
@@ -8,18 +9,20 @@ namespace DAL.Mappers
     {
         public static Post ToOrmPost(this DalPost dalPost)
         {
-            return new Post
-            {
-                Id = dalPost.Id,
-                Name = dalPost.Name,
-                Description = dalPost.Description,
-                CreationTime = dalPost.CreationTime,
-                CreatorId = dalPost.CreatorId,
-                TopicId = dalPost.TopicId,
-                Creator = dalPost.Creator.ToOrmUser(),
-                Topic = dalPost.Topic.ToOrmTopic(),
-                Replies = dalPost.Replies.Select(r => r.ToOrmReply()).ToList()
-            };
+            throw new NotImplementedException();
+
+            //return new Post
+            //{
+            //    Id = dalPost.Id,
+            //    Name = dalPost.Name,
+            //    Description = dalPost.Description,
+            //    CreationTime = dalPost.CreationTime,
+            //    CreatorId = dalPost.CreatorId,
+            //    TopicId = dalPost.TopicId,
+            //    Creator = dalPost.Creator.ToOrmUser(),
+            //    Topic = dalPost.Topic.ToOrmTopic(),
+            //    Replies = dalPost.Replies.Select(r => r.ToOrmReply()).ToList()
+            //};
         }
 
         public static DalPost ToDalPost(this Post ormPost)
@@ -29,12 +32,25 @@ namespace DAL.Mappers
                 Id = ormPost.Id,
                 Name = ormPost.Name,
                 Description = ormPost.Description,
-                CreationTime = ormPost.CreationTime,
-                CreatorId = ormPost.CreatorId,
-                TopicId = ormPost.TopicId,
-                Creator = ormPost.Creator.ToDalUser(),
-                Topic = ormPost.Topic.ToDalTopic(),
-                Replies = ormPost.Replies.Select(r => r.ToDalReply()).ToList()
+                Replies = ormPost.Replies.Select(reply => new DalReply
+                {
+                    Id = reply.Id,
+                    WrittenTime = reply.WrittenTime,
+                    Content = reply.Content,
+                    Writer = new DalUser
+                    {
+                        Name = reply.Writer.Name,
+                        JoinDate = reply.Writer.JoinDate,
+                        Location = reply.Writer.Location,
+                        IsOnline = reply.Writer.IsOnline,
+                        Posts = reply.Writer.Posts.Select(post => new DalPost()).ToList(),
+                        Roles = reply.Writer.Roles.Select(role => new DalRole
+                        {
+                            Id = role.Id,
+                            Name = role.Name
+                        }).ToList()
+                    }
+                }).ToList()
             };
         }
     }

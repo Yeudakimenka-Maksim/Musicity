@@ -1,7 +1,7 @@
 ﻿@model Mvc.PL.ViewModels.CategoriesPage.CategoriesPageCategoryViewModel
 
 <div class="category">
-    @Html.RouteLink(Model.Name, new { controller = "Musicity", action = "Topics", category = Model.Name })
+    @Model.Name
     @foreach (var topic in Model.Topics)
     {
         <div class="topic">

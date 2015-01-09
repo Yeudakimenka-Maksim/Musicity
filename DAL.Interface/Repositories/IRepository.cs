@@ -6,6 +6,7 @@ namespace DAL.Interface.Repositories
     public interface IRepository<TEntity> where TEntity : IEntity
     {
         IEnumerable<TEntity> GetAll();
+        TEntity GetByName(string name);
         void Create(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);

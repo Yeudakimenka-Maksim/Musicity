@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
+using BLL.Mappers;
 using DAL.Interface.Repositories;
 
 namespace BLL.Services
@@ -39,6 +40,14 @@ namespace BLL.Services
                         Replies = post.Replies.Select(reply => new ReplyEntity()).ToList()
                     }).ToList()
                 });
+            }
+        }
+
+        public TopicEntity GetTopicByName(string name)
+        {
+            using (uow)
+            {
+                return topicRepository.GetByName(name).ToBllTopic();
             }
         }
     }

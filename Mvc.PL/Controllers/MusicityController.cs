@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
 using BLL.Interface.Services;
 using Mvc.PL.Mappers;
@@ -21,16 +20,18 @@ namespace Mvc.PL.Controllers
 
         public ViewResult Categories()
         {
-            return
-                View(categoryService.GetAllCategories().Select(CategoriesPageMapper.ToCategoriesPageCategoryViewModel));
+            return View(categoryService.GetAllCategories()
+                .Select(CategoriesPageMapper.ToCategoriesPageCategoryViewModel));
         }
 
-        public ActionResult Posts(string topic)
+        public ViewResult Posts(string topic)
         {
-            var topicEntity = topicService.GetAllTopics().Single(t => string.Equals(t.Name, topic, StringComparison.CurrentCultureIgnoreCase));
-            var postEntities = postService.GetAllPosts()
-                .Where(post => string.Equals(post.Topic.Name, topic, StringComparison.CurrentCultureIgnoreCase));
-            return View(TopicPageMapper.ToTopicPageTopicViewModel(topicEntity, postEntities));
+            return View(topicService.GetTopicByName(topic).ToTopicPageTopicViewModel());
+        }
+
+        public ActionResult Replies(string post)
+        {
+            return View(postService.GetPostByName(post).ToPostPagePostViewModel());
         }
     }
 }

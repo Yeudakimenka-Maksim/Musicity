@@ -25,5 +25,13 @@ namespace BLL.Services
                 return postRepository.GetAll().Select(BllPostMapper.ToBllPost);
             }
         }
+
+        public PostEntity GetPostByName(string name)
+        {
+            using (uow)
+            {
+                return postRepository.GetByName(name).ToBllPost();
+            }
+        }
     }
 }

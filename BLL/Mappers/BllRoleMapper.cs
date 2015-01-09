@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using BLL.Interface.Entities;
+﻿using BLL.Interface.Entities;
 using DAL.Interface.DTO;
 
 namespace BLL.Mappers
@@ -23,8 +22,7 @@ namespace BLL.Mappers
             {
                 Id = dalRole.Id,
                 Name = dalRole.Name,
-                Description = dalRole.Description,
-                Users =  dalRole.Users.Select(u => u.ToBllUser()).ToList()
+                Description = dalRole.Description
             };
         }
     }

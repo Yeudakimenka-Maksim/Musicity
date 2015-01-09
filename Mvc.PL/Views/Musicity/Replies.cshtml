@@ -1,0 +1,10 @@
+﻿@model Mvc.PL.ViewModels.PostPage.PostPagePostViewModel
+
+@{
+    ViewBag.Title = "Replies";
+}
+
+<div class="container">
+    <h2>Replies of @Model.Name</h2>
+    @Html.Partial("ReplySummary", Model.Replies)
+</div>

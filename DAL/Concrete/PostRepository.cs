@@ -23,6 +23,13 @@ namespace DAL.Concrete
             return context.Set<Post>().Select(DalPostMapper.ToDalPost);
         }
 
+        public DalPost GetByName(string name)
+        {
+            return context.Set<Post>()
+                .Single(post => post.Name.ToLower() == name.ToLower())
+                .ToDalPost();
+        }
+
         public void Create(DalPost entity)
         {
             throw new NotImplementedException();

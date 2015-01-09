@@ -42,6 +42,7 @@
     <Compile Include="Mappers\BllUserMapper.cs" />
     <Compile Include="Services\CategoryService.cs" />
     <Compile Include="Services\PostService.cs" />
+    <Compile Include="Services\RoleService.cs" />
     <Compile Include="Services\TopicService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using BLL.Interface.Entities;
 using Mvc.PL.ViewModels.TopicPage;
@@ -29,11 +28,6 @@ namespace Mvc.PL.Mappers
                         ReplyCount = post.Replies == null || !post.Replies.Any() ? 0 : post.Replies.Count
                     })
             };
-        }
-
-        public static TopicPageTopicViewModel ToTopicPageTopicViewModel(TopicEntity topicEntity, IEnumerable<PostEntity> postEntities)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
