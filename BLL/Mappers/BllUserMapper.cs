@@ -18,12 +18,14 @@ namespace BLL.Mappers
                 LastActivity = userEntity.LastActivity,
                 Location = userEntity.Location,
                 IsOnline = userEntity.IsOnline,
-                Roles = userEntity.Roles.Select(role => new DalRole
-                {
-                    Id = role.Id,
-                    Name = role.Name,
-                    Description = role.Description
-                }).ToList()
+                Roles = userEntity.Roles == null
+                    ? null
+                    : userEntity.Roles.Select(role => new DalRole
+                    {
+                        Id = role.Id,
+                        Name = role.Name,
+                        Description = role.Description
+                    }).ToList()
             };
         }
 
@@ -40,7 +42,13 @@ namespace BLL.Mappers
                     JoinDate = dalUser.JoinDate,
                     LastActivity = dalUser.LastActivity,
                     Location = dalUser.Location,
-                    IsOnline = dalUser.IsOnline
+                    IsOnline = dalUser.IsOnline,
+                    Roles = dalUser.Roles.Select(role => new RoleEntity
+                    {
+                        Id = role.Id,
+                        Name = role.Name,
+                        Description = role.Description
+                    }).ToList()
                 };
         }
     }

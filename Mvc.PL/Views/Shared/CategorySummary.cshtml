@@ -1,18 +1,17 @@
 ﻿@model Mvc.PL.ViewModels.CategoriesPage.CategoriesPageCategoryViewModel
 
-<div class="category">
-    @Model.Name
+<fieldset>
+    <legend>@Model.Name</legend>
     @foreach (var topic in Model.Topics)
     {
-        <div class="topic">
+        <div class="editor-label">
             @Html.RouteLink(topic.Name, new { controller = "Musicity", action = "Posts", topic = topic.Name })
-            @*<p>Post count: @topic.PostCount</p>
-            @if (topic.PostCount > 0)
-            {
-                <div class="post">
-                    @topic.LastPost.Name by @topic.LastPost.Creator.Name on @topic.LastPost.CreationTime
-                </div>
-            }*@
         </div>
     }
-</div>
+    @if (HttpContext.Current.User.Identity.IsAuthenticated)
+    {
+        <div id="footer">
+            @Html.RouteLink("+ New topic", new { controller = "Musicity", action = "CreateTopic", category = Model.Name }, new { style = "background-color:#333;border:1px solid black;color:White;line-height:4.5em;padding:0.4em 1em;text-decoration:none;" })
+        </div>
+    }
+</fieldset>

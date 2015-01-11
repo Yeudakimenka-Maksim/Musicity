@@ -46,6 +46,7 @@
     <Compile Include="DTO\IEntity.cs" />
     <Compile Include="Repositories\ICategoryRepository.cs" />
     <Compile Include="Repositories\IPostRepository.cs" />
+    <Compile Include="Repositories\IReplyRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\IRoleRepository.cs" />
     <Compile Include="Repositories\ITopicRepository.cs" />

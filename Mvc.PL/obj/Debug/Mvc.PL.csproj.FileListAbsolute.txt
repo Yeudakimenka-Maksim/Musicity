@@ -49,7 +49,6 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\S
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\System.Web.WebPages.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\System.Web.WebPages.Razor.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\ORM.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\Ninject.Web.Common.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\DAL.Interface.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\DAL.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\BLL.dll
@@ -65,7 +64,6 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\S
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\System.Web.WebPages.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\System.Web.WebPages.Razor.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\ORM.pdb
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\Ninject.Web.Common.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\DAL.Interface.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\DAL.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\Mvc.PL\bin\BLL.pdb

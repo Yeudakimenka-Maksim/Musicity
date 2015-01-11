@@ -6,5 +6,6 @@ namespace BLL.Interface.Services
     public interface ICategoryService
     {
         IEnumerable<CategoryEntity> GetAllCategories();
+        CategoryEntity GetCategoryByName(string name);
     }
 }

@@ -40,3 +40,9 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyRe
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.pdb
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.Helpers.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.Helpers.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.xml

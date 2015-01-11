@@ -20,7 +20,7 @@ namespace BLL.Services
 
         public IEnumerable<PostEntity> GetAllPosts()
         {
-            using (uow)
+            //using (uow)
             {
                 return postRepository.GetAll().Select(BllPostMapper.ToBllPost);
             }
@@ -28,10 +28,16 @@ namespace BLL.Services
 
         public PostEntity GetPostByName(string name)
         {
-            using (uow)
+            //using (uow)
             {
                 return postRepository.GetByName(name).ToBllPost();
             }
+        }
+
+        public void CreatePost(PostEntity post)
+        {
+            postRepository.Create(post.ToDalPost());
+            uow.Commit();
         }
     }
 }

@@ -1,10 +1,13 @@
 ﻿@model IEnumerable<Mvc.PL.ViewModels.CategoriesPage.CategoriesPageCategoryViewModel>
 
 @{
-    ViewBag.Title = "Musicity";
+    ViewBag.Title = "Musicity - Categories";
 }
 
 @foreach (var category in Model)
 {
-    Html.RenderPartial("CategorySummary", category);
+    using (Html.BeginForm())
+    {
+        @Html.Partial("CategorySummary", category)
+    }
 }

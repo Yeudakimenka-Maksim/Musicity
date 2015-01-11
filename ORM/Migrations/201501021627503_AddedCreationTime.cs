@@ -10,7 +10,7 @@ namespace ORM.Migrations
             AddColumn("dbo.Post", "CreationTime", c => c.DateTime(nullable: false));
             AddColumn("dbo.Topic", "CreationTime", c => c.DateTime(nullable: false));
         }
-        
+
         public override void Down()
         {
             DropColumn("dbo.Topic", "CreationTime");

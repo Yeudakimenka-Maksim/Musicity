@@ -5,10 +5,10 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\DAL.Interface\obj\Debug\DAL.Interface.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\DAL.Interface\bin\Debug\EntityFramework.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\DAL.Interface\bin\Debug\EntityFramework.xml
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\obj\Debug\DAL.Interface.csprojResolveAssemblyReference.cache
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\obj\Debug\DAL.Interface.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\bin\Debug\DAL.Interface.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\bin\Debug\DAL.Interface.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\bin\Debug\EntityFramework.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\bin\Debug\EntityFramework.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\obj\Debug\DAL.Interface.pdb
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL.Interface\obj\Debug\DAL.Interface.csprojResolveAssemblyReference.cache

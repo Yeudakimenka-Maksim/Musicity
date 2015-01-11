@@ -8,16 +8,6 @@ namespace BLL.Mappers
     {
         public static DalCategory ToDalCategory(this CategoryEntity categoryEntity)
         {
-            //return new DalCategory
-            //{
-            //    Id = categoryEntity.Id,
-            //    Name = categoryEntity.Name,
-            //    Description = categoryEntity.Description,
-            //    CreationTime = categoryEntity.CreationTime,
-            //    CreatorId = categoryEntity.CreatorId,
-            //    Creator = categoryEntity.Creator.ToDalUser(),
-            //    //Topics = (ICollection<DalTopic>) categoryEntity.Topics.Select(t => t.ToDalTopic())
-            //};
             return new DalCategory
             {
                 Id = categoryEntity.Id,

@@ -1,0 +1,17 @@
+DELETE FROM [Reply]
+GO
+
+DELETE FROM [Post]
+GO
+
+DELETE FROM [Topic]
+GO
+
+DELETE FROM [Category]
+GO
+
+DELETE FROM [Role]
+GO
+
+DELETE FROM [User]
+GO

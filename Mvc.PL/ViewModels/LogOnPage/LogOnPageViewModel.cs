@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Mvc.PL.ViewModels.LogOnPage
 {
@@ -14,13 +13,6 @@ namespace Mvc.PL.ViewModels.LogOnPage
         [DataType(DataType.Password)]
         [StringLength(100, ErrorMessage = "The password must contain at least {2} characters.", MinimumLength = 6)]
         public string Password { get; set; }
-
-        [Display(Name = "Date of Birth")]
-        [DataType(DataType.Date)]
-        public DateTime? DateOfBirth { get; set; }
-
-        [Display(Name = "Location")]
-        public string Location { get; set; }
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }

@@ -12,7 +12,6 @@ namespace BLL.Mappers
                 Id = roleEntity.Id,
                 Name = roleEntity.Name,
                 Description = roleEntity.Description,
-                //Users = (ICollection<DalUser>) roleEntity.Users.Select(u => u.ToDalUser())
             };
         }
 

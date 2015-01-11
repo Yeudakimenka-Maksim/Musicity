@@ -17,18 +17,20 @@ namespace Mvc.PL.Providers
 
         public override bool IsUserInRole(string username, string roleName)
         {
-            var user = userService.GetAllUsers().SingleOrDefault(u => u.Name == username);
+            var user = userService.GetUserByName(username);
             if (user == null)
                 return false;
-            return user.Roles.SingleOrDefault(role => role.Name == roleName) != null;
+            return user.Roles.SingleOrDefault(role =>
+                String.Equals(role.Name, roleName, StringComparison.CurrentCultureIgnoreCase)) != null;
         }
-
-        #region Not Implemented
 
         public override string[] GetRolesForUser(string username)
         {
-            throw new NotImplementedException();
+            var user = userService.GetUserByName(username);
+            return user == null ? null : user.Roles.Select(role => role.Name).ToArray();
         }
+
+        #region Not Implemented
 
         public override void CreateRole(string roleName)
         {

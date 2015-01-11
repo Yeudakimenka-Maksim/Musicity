@@ -130,6 +130,7 @@
     <Compile Include="Controllers\MusicityController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Infrastructure\CaptchaImage.cs" />
+    <Compile Include="Mappers\AdminPagesMapper.cs" />
     <Compile Include="Mappers\PostPageMapper.cs" />
     <Compile Include="Mappers\TopicPageMapper.cs" />
     <Compile Include="Mappers\CategoriesPageMapper.cs" />
@@ -140,6 +141,10 @@
     <Compile Include="Providers\CustomMembershipProvider.cs" />
     <Compile Include="Mappers\MembershipUserMapper.cs" />
     <Compile Include="Providers\CustomRoleProvider.cs" />
+    <Compile Include="ViewModels\AdminPages\AdminPagesUserViewModel.cs" />
+    <Compile Include="ViewModels\CreatePostPage\CreatePostPagePostViewModel.cs" />
+    <Compile Include="ViewModels\CreateReplyPage\CreateReplyPageReplyViewModel.cs" />
+    <Compile Include="ViewModels\CreateTopicPage\CreateTopicPageTopicViewModel.cs" />
     <Compile Include="ViewModels\Other\CategoryViewModel.cs" />
     <Compile Include="ViewModels\CategoriesPage\CategoriesPageCategoryViewModel.cs" />
     <Compile Include="ViewModels\CategoriesPage\CategoriesPagePostViewModel.cs" />
@@ -167,6 +172,7 @@
     <Content Include="App_Data\Forum_log.ldf">
       <DependentUpon>Forum.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\Admin.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -228,12 +234,16 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Menu.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Musicity\CreateReply.cshtml" />
+    <Content Include="Views\Musicity\CreateTopic.cshtml" />
+    <Content Include="Views\Musicity\CreatePost.cshtml" />
+    <None Include="Views\Admin\Index.cshtml" />
     <None Include="Views\Shared\CategorySummary.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\themes\base\images\" />
     <Folder Include="Content\themes\base\minified\images\" />
-    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

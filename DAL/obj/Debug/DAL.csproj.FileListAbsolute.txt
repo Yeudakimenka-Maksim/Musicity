@@ -20,3 +20,9 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debu
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\ORM.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\EntityFramework.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\obj\Debug\DAL.pdb
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\System.Web.Helpers.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\System.Web.WebPages.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\System.Web.Helpers.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\System.Web.WebPages.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DAL\bin\Debug\System.Web.WebPages.Deployment.xml

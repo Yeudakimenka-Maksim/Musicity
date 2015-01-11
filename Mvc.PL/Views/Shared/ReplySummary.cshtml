@@ -2,12 +2,10 @@
 
 @foreach (var reply in Model)
 {
-    <div class="row">
-        @Html.DisplayFor(model => reply.WrittenTime) by @reply.Writer.Name
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            @Html.DisplayFor(model => reply.Content)
+    <fieldset>
+        <legend>By @reply.Writer.Name on @reply.WrittenTime</legend>
+        <div class="editor-label">
+            @reply.Content
         </div>
-    </div>
+    </fieldset>
 }

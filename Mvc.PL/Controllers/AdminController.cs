@@ -1,88 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
+using BLL.Interface.Entities;
+using BLL.Interface.Services;
+using Mvc.PL.Mappers;
 
 namespace Mvc.PL.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
-        // GET: Admin
+        private readonly IUserService userService;
+
+        public AdminController(IUserService userService)
+        {
+            this.userService = userService;
+        }
+
         public ActionResult Index()
         {
-            return View();
+            return View(userService.GetUsersInRole("Reader").Select(AdminPagesMapper.ToAdminPagesUserViewModel));
         }
 
-        // GET: Admin/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Admin/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Admin/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Admin/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Admin/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Admin/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Admin/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
             try
             {
-                // TODO: Add delete logic here
+                userService.DeleteUser(new UserEntity { Id = id });
 
+                TempData["message"] = "User deleted successfully";
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                TempData["message"] = "Cannot delete this user. Check if he has created any topics, posts or replies and delete them first";
+                return RedirectToAction("Index");
             }
         }
     }

@@ -1,19 +1,18 @@
 ﻿@if (HttpContext.Current.User.Identity.IsAuthenticated)
 {
-    <ul>
-        <li>@HttpContext.Current.User.Identity.Name</li>
-        <li>@Html.ActionLink("Logoff", "LogOff", "Account")</li>
-    </ul>
-
-    if (HttpContext.Current.User.IsInRole("Admin"))
-    {
-        <h3>You are logged in as an administrator</h3>
-    }
+    <div id="cart">
+        @HttpContext.Current.User.Identity.Name
+        @if (HttpContext.Current.User.IsInRole("Admin"))
+        {
+            @Html.ActionLink("Admin panel", "Index", "Admin", null, new { style = "background-color:#333;border:1px solid black;color:White;line-height:2.1em;margin-left:0.5em;padding:0.4em 1em;text-decoration:none;" })
+        }
+        @Html.ActionLink("Logoff", "LogOff", "Account")
+    </div>
 }
 else
 {
-    <ul>
-        <li>@Html.ActionLink("Login", "Login", "Account")</li>
-        <li>@Html.ActionLink("Register", "Register", "Account")</li>
-    </ul>
+    <div id="member">
+        @Html.ActionLink("Login", "Login", "Account", null, new { style = "background-color:#333;border:1px solid black;color:White;line-height:2.1em;margin-left:0.5em;padding:0.4em 1em;text-decoration:none;" })
+        @Html.ActionLink("Register", "Register", "Account", null, new { style = "background-color:#333;border:1px solid black;color:White;line-height:2.1em;margin-left:0.5em;padding:0.4em 1em;text-decoration:none;" })
+    </div>
 }

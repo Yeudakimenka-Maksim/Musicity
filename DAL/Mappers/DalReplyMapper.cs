@@ -14,9 +14,7 @@ namespace DAL.Mappers
                 IsSubject = dalReply.IsSubject,
                 Content = dalReply.Content,
                 PostId = dalReply.PostId,
-                WriterId = dalReply.WriterId,
-                Post = dalReply.Post.ToOrmPost(),
-                Writer = dalReply.Writer.ToOrmUser()
+                WriterId = dalReply.WriterId
             };
         }
 
@@ -29,9 +27,7 @@ namespace DAL.Mappers
                 IsSubject = ormReply.IsSubject,
                 Content = ormReply.Content,
                 PostId = ormReply.PostId,
-                WriterId = ormReply.WriterId,
-                Post = ormReply.Post.ToDalPost(),
-                Writer = ormReply.Writer.ToDalUser()
+                WriterId = ormReply.WriterId
             };
         }
     }

@@ -20,10 +20,15 @@ namespace BLL.Services
 
         public IEnumerable<CategoryEntity> GetAllCategories()
         {
-            using (uow)
+            //using (uow)
             {
                 return categoryRepository.GetAll().Select(BllCategoryMapper.ToBllCategory);
             }
+        }
+
+        public CategoryEntity GetCategoryByName(string name)
+        {
+            return categoryRepository.GetByName(name).ToBllCategory();
         }
     }
 }

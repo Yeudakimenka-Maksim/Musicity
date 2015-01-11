@@ -14,7 +14,7 @@ header, footer, nav, section { display: block; }
 fieldset {
     border: 1px solid #ddd;
     padding: 0 1.4em 1.4em 1.4em;
-    margin: 0 0 1.5em 0;
+    margin: 1em 0 1.5em 0;
 }
 
 legend {
@@ -47,3 +47,46 @@ textarea { min-height: 75px; }
 }
 
 .validation-summary-valid { display: none; }
+
+/* Custom Styles
+-----------------------------------------------------------*/
+
+body { margin: 0 }
+
+div#header {
+    background-color: #444;
+    border-bottom: 2px solid #111;
+    color: White;
+}
+
+div#header div.title { font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial; }
+
+div#header div.title {
+    font-size: 2em;
+    padding: .6em;
+}
+
+div#member {
+    color: Silver;
+    float: right;
+    margin: 0.8em;
+    padding: 0.5em 0.5em 0.5em 1em;
+}
+
+div#cart {
+    float: right;
+    margin: .8em;
+    color: Silver;
+    background-color: #555;
+    padding: .5em .5em .5em 1em;
+}
+
+div#cart a {
+    text-decoration: none;
+    padding: .4em 1em .4em 1em;
+    line-height: 2.1em;
+    margin-left: .5em;
+    background-color: #333;
+    color: White;
+    border: 1px solid black;
+}

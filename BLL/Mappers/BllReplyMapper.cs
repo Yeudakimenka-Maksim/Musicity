@@ -14,9 +14,7 @@ namespace BLL.Mappers
                 IsSubject = replyEntity.IsSubject,
                 Content = replyEntity.Content,
                 PostId = replyEntity.PostId,
-                WriterId = replyEntity.WriterId,
-                Post = replyEntity.Post.ToDalPost(),
-                Writer = replyEntity.Writer.ToDalUser()
+                WriterId = replyEntity.WriterId
             };
         }
 
@@ -29,9 +27,7 @@ namespace BLL.Mappers
                 IsSubject = dalReply.IsSubject,
                 Content = dalReply.Content,
                 PostId = dalReply.PostId,
-                WriterId = dalReply.WriterId,
-                Post = dalReply.Post.ToBllPost(),
-                Writer = dalReply.Writer.ToBllUser()
+                WriterId = dalReply.WriterId
             };
         }
     }

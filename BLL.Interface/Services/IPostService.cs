@@ -7,5 +7,6 @@ namespace BLL.Interface.Services
     {
         IEnumerable<PostEntity> GetAllPosts();
         PostEntity GetPostByName(string name);
+        void CreatePost(PostEntity post);
     }
 }

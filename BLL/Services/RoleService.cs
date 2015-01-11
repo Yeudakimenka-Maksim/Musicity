@@ -20,7 +20,7 @@ namespace BLL.Services
 
         public IEnumerable<RoleEntity> GetAllRoles()
         {
-            using (uow)
+            //using (uow)
             {
                 return roleRepository.GetAll().Select(role => role.ToBllRole());
             }
@@ -28,7 +28,7 @@ namespace BLL.Services
 
         public RoleEntity GetRoleByName(string name)
         {
-            using (uow)
+            //using (uow)
             {
                 return roleRepository.GetByName(name).ToBllRole();
             }

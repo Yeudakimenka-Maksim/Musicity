@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web.Helpers;
 using System.Web.Mvc;
 using System.Web.Security;
@@ -28,13 +29,13 @@ namespace Mvc.PL.Providers
             userService.CreateUser(new UserEntity
             {
                 Name = name,
-                Password = password,
+                Password = Crypto.HashPassword(password),
                 DateOfBirth = dateOfBirth,
                 JoinDate = joinDate,
                 LastActivity = lastActivity,
                 Location = location,
                 IsOnline = isOnline,
-                Roles = new[] { roleService.GetRoleByName("Reader") }
+                Roles = new List<RoleEntity> { roleService.GetRoleByName("Reader") }
             });
 
             return GetUser(name, false);

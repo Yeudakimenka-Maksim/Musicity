@@ -44,6 +44,7 @@
     <Compile Include="Services\IAccountService.cs" />
     <Compile Include="Services\ICategoryService.cs" />
     <Compile Include="Services\IPostService.cs" />
+    <Compile Include="Services\IReplyService.cs" />
     <Compile Include="Services\IRoleService.cs" />
     <Compile Include="Services\ITopicService.cs" />
     <Compile Include="Services\IUserService.cs" />

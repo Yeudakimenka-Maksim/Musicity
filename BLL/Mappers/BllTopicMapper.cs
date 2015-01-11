@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using BLL.Interface.Entities;
 using DAL.Interface.DTO;
 
@@ -9,7 +8,6 @@ namespace BLL.Mappers
     {
         public static DalTopic ToDalTopic(this TopicEntity topicEntity)
         {
-            throw new NotImplementedException();
             return new DalTopic
             {
                 Id = topicEntity.Id,
@@ -17,10 +15,7 @@ namespace BLL.Mappers
                 Description = topicEntity.Description,
                 CreationTime = topicEntity.CreationTime,
                 CreatorId = topicEntity.CreatorId,
-                CategoryId = topicEntity.CategoryId,
-                Creator = topicEntity.Creator.ToDalUser(),
-                Category = topicEntity.Category.ToDalCategory(),
-                //Posts = (ICollection<DalPost>) topicEntity.Posts.Select(p => p.ToDalPost())
+                CategoryId = topicEntity.CategoryId
             };
         }
 

@@ -27,8 +27,7 @@ namespace DAL.Concrete
 
         private void Dispose(bool disposing)
         {
-            if (!disposing) return;
-            if (Context != null)
+            if (disposing && Context != null)
                 Context.Dispose();
         }
     }

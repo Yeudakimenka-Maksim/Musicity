@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Mvc.PL.ViewModels.AdminPages.AdminPagesUserViewModel>
+
+@{
+    ViewBag.Title = "Musicity - Admin pages";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@if (TempData.ContainsKey("message"))
+{
+    <div class="validation-summary-errors">@TempData["message"]</div>
+}
+
+<table class="Grid">
+    <tr>
+        <th>Username</th>
+        <th>Date of Birth</th>
+        <th>Join date</th>
+        <th>Last Activity</th>
+        <th>Location</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Name</td>
+            <td>@user.DateOfBirth</td>
+            <td>@user.JoinDate.ToShortDateString()</td>
+            <td>@user.LastActivity</td>
+            <td>@user.Location</td>
+            <td>
+                @using (Html.BeginForm("Delete", "Admin"))
+                {
+                    @Html.Hidden("id", user.Id)
+                    <input type="submit" value="Delete"/>
+                }
+            </td>
+        </tr>
+    }
+</table>

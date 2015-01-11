@@ -32,7 +32,7 @@ namespace DAL.Concrete
 
         public void Create(DalPost entity)
         {
-            throw new NotImplementedException();
+            context.Set<Post>().Add(entity.ToOrmPost());
         }
 
         public void Update(DalPost entity)

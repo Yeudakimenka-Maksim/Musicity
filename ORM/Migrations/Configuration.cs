@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
+using System.Web.Helpers;
 using ORM.Context;
 using ORM.Entities;
 
@@ -45,7 +46,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Admin",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("18-02-1994 09:35:00"),
                     JoinDate = DateTime.Parse("01-01-2015"),
                     LastActivity = DateTime.Now,
@@ -56,7 +57,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Mirrorball95",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("13-04-2009"),
                     LastActivity = DateTime.Parse("25-12-2010 07:55 AM"),
@@ -67,7 +68,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "innertide",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("07-11-2004"),
                     LastActivity = DateTime.Parse("27-04-2009 02:54 PM"),
@@ -78,7 +79,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "anticipation",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("15-06-2005"),
                     LastActivity = DateTime.Parse("30-12-2014 07:01 AM"),
@@ -89,7 +90,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Pet_Sounds",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("01-01-2000"),
                     JoinDate = DateTime.Parse("17-02-2014"),
                     LastActivity = DateTime.Parse("26-12-2014 09:34 PM"),
@@ -100,7 +101,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Above",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("28-11-2011"),
                     LastActivity = DateTime.Parse("19-12-2011 04:04 PM"),
@@ -111,7 +112,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Wild7Dustr",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("08-12-2005"),
                     LastActivity = DateTime.Parse("09-02-2008 09:24 PM"),
@@ -122,7 +123,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "illusion",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("01-01-2006"),
                     LastActivity = DateTime.Parse("19-09-2006 08:39 PM"),
@@ -133,7 +134,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Zohar",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("07-01-2013"),
                     LastActivity = DateTime.Parse("07-01-2013 10:55 AM"),
@@ -144,7 +145,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Plankton",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("August 30, 1966"),
                     JoinDate = DateTime.Parse("30-04-2012"),
                     LastActivity = DateTime.Parse("31-12-2014 02:26 PM"),
@@ -155,7 +156,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Uh_Me",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("24-02-2012"),
                     LastActivity = DateTime.Parse("02-10-2013 04:15 AM"),
@@ -166,7 +167,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Descendents",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("11-01-2013"),
                     LastActivity = DateTime.Parse("20-01-2013 12:18 AM"),
@@ -177,7 +178,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Rjinn",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("01-01-1988"),
                     JoinDate = DateTime.Parse("26-06-2012"),
                     LastActivity = DateTime.Parse("16-11-2014 02:05 AM"),
@@ -188,7 +189,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "FRED HALE SR.",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("04-04-2011"),
                     LastActivity = DateTime.Parse("05-12-2014 04:20 PM"),
@@ -199,7 +200,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Kurt_Cobain",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("September 27, 1986"),
                     JoinDate = DateTime.Parse("05-02-2005"),
                     LastActivity = DateTime.Parse("19-06-2014 08:25 AM"),
@@ -210,7 +211,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Rainard Jalen",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("03-08-2006"),
                     LastActivity = DateTime.Parse("27-03-2014 06:41 AM"),
@@ -221,7 +222,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Seltzer",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("May 4, 1988"),
                     JoinDate = DateTime.Parse("02-12-2005"),
                     LastActivity = DateTime.Parse("21-04-2012 07:03 PM"),
@@ -232,7 +233,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "lucifer_sam",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("01-01-1989"),
                     JoinDate = DateTime.Parse("27-06-2008"),
                     LastActivity = DateTime.Parse("06-12-2011 01:19 AM"),
@@ -243,7 +244,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Son of JayJamJah",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("19-07-2007"),
                     LastActivity = DateTime.Parse("22-01-2012 03:02 AM"),
@@ -254,7 +255,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "TheBig3",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("November 22, 1982"),
                     JoinDate = DateTime.Parse("23-08-2004"),
                     LastActivity = DateTime.Parse("01-01-2015 01:49 AM"),
@@ -265,7 +266,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Urban Hatˆmonger ?",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = null,
                     JoinDate = DateTime.Parse("21-12-2004"),
                     LastActivity = DateTime.Parse("26-12-2014 12:37 PM"),
@@ -276,7 +277,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Enfilade",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("August 14, 1989"),
                     JoinDate = DateTime.Parse("09-12-2004"),
                     LastActivity = DateTime.Parse("19-06-2005 09:14 PM"),
@@ -287,7 +288,7 @@ namespace ORM.Migrations
                 new User
                 {
                     Name = "Sneer",
-                    Password = "123456",
+                    Password = Crypto.HashPassword("123456"),
                     DateOfBirth = DateTime.Parse("September 1, 1987"),
                     JoinDate = DateTime.Parse("01-11-2004"),
                     LastActivity = DateTime.Parse("27-12-2011 12:55 PM"),
@@ -298,7 +299,7 @@ namespace ORM.Migrations
                 //new OrmUser
                 //{
                 //    Name = "",
-                //    Password = "123456",
+                //    Password = Crypto.HashPassword("123456"),
                 //    DateOfBirth = ,
                 //    JoinDate = DateTime.Parse(""),
                 //    LastActivity = DateTime.Parse(""),
@@ -420,6 +421,34 @@ namespace ORM.Migrations
 
         private static void AddPosts(ForumContext context)
         {
+            var albumReviewsPosts = new List<Post>
+            {
+                new Post
+                {
+                    Name = "Pink Floyd \"Endless River\"",
+                    Description = null,
+                    CreationTime = DateTime.Parse("14-11-2014, 07:09 PM"),
+                    CreatorId = context.Users.Single(u => u.Name == "Uh_Me").Id,
+                    TopicId = context.Topics.Single(t => t.Name == "Album Reviews").Id
+                }
+            };
+            albumReviewsPosts.ForEach(s => context.Posts.AddOrUpdate(p => p.Name, s));
+            context.SaveChanges();
+
+            var newReleasesPosts = new List<Post>
+            {
+                new Post
+                {
+                    Name = "Kanye West - Yeezus",
+                    Description = null,
+                    CreationTime = DateTime.Parse("14-06-2013, 08:42 PM"),
+                    CreatorId = context.Users.Single(u => u.Name == "Enfilade").Id,
+                    TopicId = context.Topics.Single(t => t.Name == "New Releases").Id
+                }
+            };
+            newReleasesPosts.ForEach(s => context.Posts.AddOrUpdate(p => p.Name, s));
+            context.SaveChanges();
+
             var rockMetalPosts = new List<Post>
             {
                 new Post

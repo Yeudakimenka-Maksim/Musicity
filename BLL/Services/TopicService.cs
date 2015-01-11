@@ -20,7 +20,7 @@ namespace BLL.Services
 
         public IEnumerable<TopicEntity> GetAllTopics()
         {
-            using (uow)
+            //using (uow)
             {
                 return topicRepository.GetAll().Select(topic => new TopicEntity
                 {
@@ -45,10 +45,16 @@ namespace BLL.Services
 
         public TopicEntity GetTopicByName(string name)
         {
-            using (uow)
+            //using (uow)
             {
                 return topicRepository.GetByName(name).ToBllTopic();
             }
+        }
+
+        public void CreateTopic(TopicEntity topic)
+        {
+            topicRepository.Create(topic.ToDalTopic());
+            uow.Commit();
         }
     }
 }

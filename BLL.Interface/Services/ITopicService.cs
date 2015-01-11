@@ -7,5 +7,6 @@ namespace BLL.Interface.Services
     {
         IEnumerable<TopicEntity> GetAllTopics();
         TopicEntity GetTopicByName(string name);
+        void CreateTopic(TopicEntity topic);
     }
 }

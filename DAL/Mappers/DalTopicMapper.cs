@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using DAL.Interface.DTO;
 using ORM.Entities;
 
@@ -9,20 +8,15 @@ namespace DAL.Mappers
     {
         public static Topic ToOrmTopic(this DalTopic dalTopic)
         {
-            throw new NotImplementedException();
-
-            //return new Topic
-            //{
-            //    Id = dalTopic.Id,
-            //    Name = dalTopic.Name,
-            //    Description = dalTopic.Description,
-            //    CreationTime = dalTopic.CreationTime,
-            //    CreatorId = dalTopic.CreatorId,
-            //    CategoryId = dalTopic.CategoryId,
-            //    Creator = dalTopic.Creator.ToOrmUser(),
-            //    Category = dalTopic.Category.ToOrmCategory(),
-            //    Posts = dalTopic.Posts.Select(p => p.ToOrmPost()).ToList()
-            //};
+            return new Topic
+            {
+                Id = dalTopic.Id,
+                Name = dalTopic.Name,
+                Description = dalTopic.Description,
+                CreationTime = dalTopic.CreationTime,
+                CreatorId = dalTopic.CreatorId,
+                CategoryId = dalTopic.CategoryId
+            };
         }
 
         public static DalTopic ToDalTopic(this Topic ormTopic)

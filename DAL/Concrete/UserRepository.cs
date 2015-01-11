@@ -30,6 +30,13 @@ namespace DAL.Concrete
                 .ToDalUser();
         }
 
+        public IEnumerable<DalUser> GetAllInRole(string role)
+        {
+            return context.Set<User>()
+                .Where(user => user.Roles.Any(r => r.Name.ToLower() == role.ToLower()))
+                .Select(DalUserMapper.ToDalUser);
+        }
+
         public void Create(DalUser entity)
         {
             context.Set<User>().Add(entity.ToOrmUser());
@@ -42,7 +49,7 @@ namespace DAL.Concrete
 
         public void Delete(DalUser entity)
         {
-            throw new NotImplementedException();
+            context.Set<User>().Remove(context.Set<User>().Single(user => user.Id == entity.Id));
         }
     }
 }

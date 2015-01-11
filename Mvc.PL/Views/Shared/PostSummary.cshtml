@@ -1,5 +1,5 @@
 ﻿@model Mvc.PL.ViewModels.TopicPage.TopicPagePostViewModel
 
-<div class="topic">
-    @Html.RouteLink(Model.Name, new { controller = "Musicity", action = "Replies", post = Model.Name })
-</div>
+    <div class="editor-label">
+        @Html.RouteLink(Model.Name, new { controller = "Musicity", action = "Replies", post = Model.Name })
+    </div>
