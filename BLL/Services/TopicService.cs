@@ -27,6 +27,24 @@ namespace BLL.Services
                     Id = topic.Id,
                     Name = topic.Name,
                     Description = topic.Description,
+                    CreationTime = topic.CreationTime,
+                    Creator = new UserEntity
+                    {
+                        Id = topic.Creator.Id,
+                        Name = topic.Creator.Name,
+                        DateOfBirth = topic.Creator.DateOfBirth,
+                        JoinDate = topic.Creator.JoinDate,
+                        LastActivity = topic.Creator.LastActivity,
+                        Location = topic.Creator.Location,
+                        IsOnline = topic.Creator.IsOnline
+                    },
+                    Category = new CategoryEntity
+                    {
+                        Id = topic.Category.Id,
+                        Name = topic.Category.Name,
+                        Description = topic.Category.Description,
+                        CreationTime = topic.Category.CreationTime
+                    },
                     Posts = topic.Posts.Select(post => new PostEntity
                     {
                         Id = post.Id,

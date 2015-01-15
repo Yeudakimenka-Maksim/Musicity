@@ -52,3 +52,33 @@ div.Message {
     height: 5em;
     font-family: Segoe UI, Verdana;
 }
+
+div#content {
+    border-left: 2px solid gray;
+    margin-left: 9em;
+    padding: 1em;
+}
+
+div#tables {
+    float: left;
+    width: 8em;
+    padding: .3em;
+}
+
+div#tables a {
+    font: bold 1.1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+    display: block;
+    text-decoration: none;
+    padding: .6em;
+    color: Black;
+    border-bottom: 1px solid silver;
+}
+
+div#tables a.selected {
+    background-color: #666;
+    color: White;
+}
+
+div#tables a:hover { background-color: #CCC; }
+
+div#tables a.selected:hover { background-color: #666; }

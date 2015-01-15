@@ -5,11 +5,6 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-@if (TempData.ContainsKey("message"))
-{
-    <div class="validation-summary-errors">@TempData["message"]</div>
-}
-
 <table class="Grid">
     <tr>
         <th>Username</th>
@@ -28,10 +23,10 @@
             <td>@user.LastActivity</td>
             <td>@user.Location</td>
             <td>
-                @using (Html.BeginForm("Delete", "Admin"))
+                @using (Html.BeginForm("DeleteUser", "Admin"))
                 {
                     @Html.Hidden("id", user.Id)
-                    <input type="submit" value="Delete"/>
+                    <input type="submit" value="Delete" />
                 }
             </td>
         </tr>

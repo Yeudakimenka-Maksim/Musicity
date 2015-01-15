@@ -1,0 +1,15 @@
+﻿@model string[]
+
+@foreach (var link in Model)
+{
+    @Html.RouteLink(link,
+        new
+        {
+            controller = "Admin",
+            action = link
+        },
+        new
+        {
+            @class = link == ViewBag.SelectedTable ? "selected" : null
+        })
+}

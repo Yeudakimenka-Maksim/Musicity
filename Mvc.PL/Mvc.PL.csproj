@@ -127,6 +127,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminNavController.cs" />
     <Compile Include="Controllers\MusicityController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Infrastructure\CaptchaImage.cs" />
@@ -141,6 +142,10 @@
     <Compile Include="Providers\CustomMembershipProvider.cs" />
     <Compile Include="Mappers\MembershipUserMapper.cs" />
     <Compile Include="Providers\CustomRoleProvider.cs" />
+    <Compile Include="ViewModels\AdminPages\AdminPagesCategoryViewModel.cs" />
+    <Compile Include="ViewModels\AdminPages\AdminPagesPostViewModel.cs" />
+    <Compile Include="ViewModels\AdminPages\AdminPagesReplyViewModel.cs" />
+    <Compile Include="ViewModels\AdminPages\AdminPagesTopicViewModel.cs" />
     <Compile Include="ViewModels\AdminPages\AdminPagesUserViewModel.cs" />
     <Compile Include="ViewModels\CreatePostPage\CreatePostPagePostViewModel.cs" />
     <Compile Include="ViewModels\CreateReplyPage\CreateReplyPageReplyViewModel.cs" />
@@ -237,7 +242,12 @@
     <Content Include="Views\Musicity\CreateReply.cshtml" />
     <Content Include="Views\Musicity\CreateTopic.cshtml" />
     <Content Include="Views\Musicity\CreatePost.cshtml" />
-    <None Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Topics.cshtml" />
+    <Content Include="Views\Admin\Categories.cshtml" />
+    <Content Include="Views\Admin\Posts.cshtml" />
+    <Content Include="Views\Admin\Replies.cshtml" />
+    <Content Include="Views\AdminNav\Menu.cshtml" />
+    <None Include="Views\Admin\Users.cshtml" />
     <None Include="Views\Shared\CategorySummary.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
   </ItemGroup>

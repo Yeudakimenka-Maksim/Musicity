@@ -26,6 +26,24 @@ namespace DAL.Mappers
                 Id = ormTopic.Id,
                 Name = ormTopic.Name,
                 Description = ormTopic.Description,
+                CreationTime = ormTopic.CreationTime,
+                Creator = new DalUser
+                {
+                    Id = ormTopic.Creator.Id,
+                    Name = ormTopic.Creator.Name,
+                    DateOfBirth = ormTopic.Creator.DateOfBirth,
+                    JoinDate = ormTopic.Creator.JoinDate,
+                    LastActivity = ormTopic.Creator.LastActivity,
+                    Location = ormTopic.Creator.Location,
+                    IsOnline = ormTopic.Creator.IsOnline
+                },
+                Category = new DalCategory
+                {
+                    Id = ormTopic.Category.Id,
+                    Name = ormTopic.Category.Name,
+                    Description = ormTopic.Category.Description,
+                    CreationTime = ormTopic.Category.CreationTime
+                },
                 Posts = ormTopic.Posts.Select(post => new DalPost
                 {
                     Id = post.Id,

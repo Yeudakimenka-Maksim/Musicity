@@ -41,6 +41,18 @@ namespace BLL.Mappers
                 Id = dalCategory.Id,
                 Name = dalCategory.Name,
                 Description = dalCategory.Description,
+                CreationTime = dalCategory.CreationTime,
+                Creator = new UserEntity
+                {
+                    Id = dalCategory.Creator.Id,
+                    Name = dalCategory.Creator.Name,
+                    Password = dalCategory.Creator.Password,
+                    DateOfBirth = dalCategory.Creator.DateOfBirth,
+                    JoinDate = dalCategory.Creator.JoinDate,
+                    LastActivity = dalCategory.Creator.LastActivity,
+                    Location = dalCategory.Creator.Location,
+                    IsOnline = dalCategory.Creator.IsOnline
+                },
                 Topics = dalCategory.Topics.Select(topic => new TopicEntity
                 {
                     Id = topic.Id,

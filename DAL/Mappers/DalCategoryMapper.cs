@@ -29,6 +29,18 @@ namespace DAL.Mappers
                 Id = ormCategory.Id,
                 Name = ormCategory.Name,
                 Description = ormCategory.Description,
+                CreationTime = ormCategory.CreationTime,
+                Creator = new DalUser
+                {
+                    Id = ormCategory.Creator.Id,
+                    Name = ormCategory.Creator.Name,
+                    Password = ormCategory.Creator.Password,
+                    DateOfBirth = ormCategory.Creator.DateOfBirth,
+                    JoinDate = ormCategory.Creator.JoinDate,
+                    LastActivity = ormCategory.Creator.LastActivity,
+                    Location = ormCategory.Creator.Location,
+                    IsOnline = ormCategory.Creator.IsOnline
+                },
                 Topics = ormCategory.Topics.Select(topic => new DalTopic
                 {
                     Id = topic.Id,

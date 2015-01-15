@@ -20,7 +20,7 @@ namespace BLL.Services
 
         public IEnumerable<ReplyEntity> GetAllReplies()
         {
-            return replyRepository.GetAll().Select(reply => reply.ToBllReply());
+            return replyRepository.GetAll().Select(BllReplyMapper.ToBllReply);
         }
 
         public void CreateReply(ReplyEntity reply)

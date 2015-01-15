@@ -26,6 +26,24 @@ namespace BLL.Mappers
                 Id = dalPost.Id,
                 Name = dalPost.Name,
                 Description = dalPost.Description,
+                CreationTime = dalPost.CreationTime,
+                Creator = new UserEntity
+                {
+                    Id = dalPost.Creator.Id,
+                    Name = dalPost.Creator.Name,
+                    DateOfBirth = dalPost.Creator.DateOfBirth,
+                    JoinDate = dalPost.Creator.JoinDate,
+                    LastActivity = dalPost.Creator.LastActivity,
+                    Location = dalPost.Creator.Location,
+                    IsOnline = dalPost.Creator.IsOnline
+                },
+                Topic = new TopicEntity
+                {
+                    Id = dalPost.Topic.Id,
+                    Name = dalPost.Topic.Name,
+                    Description = dalPost.Topic.Description,
+                    CreationTime = dalPost.Topic.CreationTime,
+                },
                 Replies = dalPost.Replies.Select(reply => new ReplyEntity
                 {
                     Id = reply.Id,

@@ -32,7 +32,7 @@ namespace DAL.Concrete
 
         public void Create(DalCategory entity)
         {
-            throw new NotImplementedException();
+            context.Set<Category>().Add(entity.ToOrmCategory());
         }
 
         public void Update(DalCategory entity)
