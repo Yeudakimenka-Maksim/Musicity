@@ -3,10 +3,10 @@ using System.Linq;
 using System.Web.Mvc;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
-using Mvc.PL.Mappers;
+using Mvc.PL.Mappers.UserPages;
+using Mvc.PL.ViewModels.CreatePostPage;
 using Mvc.PL.ViewModels.CreateReplyPage;
 using Mvc.PL.ViewModels.CreateTopicPage;
-using Mvc.PL.ViewModels.CreatePostPage;
 
 namespace Mvc.PL.Controllers
 {

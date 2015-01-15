@@ -23,6 +23,11 @@ namespace DAL.Concrete
             return context.Set<Reply>().Select(DalReplyMapper.ToDalReply);
         }
 
+        public DalReply GetById(int id)
+        {
+            return context.Set<Reply>().Single(reply => reply.Id == id).ToDalReply();
+        }
+
         public DalReply GetByName(string name)
         {
             throw new NotImplementedException();
@@ -40,7 +45,7 @@ namespace DAL.Concrete
 
         public void Delete(DalReply entity)
         {
-            throw new NotImplementedException();
+            context.Set<Reply>().Remove(context.Set<Reply>().Single(reply => reply.Id == entity.Id));
         }
     }
 }

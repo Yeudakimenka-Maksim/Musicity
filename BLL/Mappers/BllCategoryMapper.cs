@@ -13,24 +13,8 @@ namespace BLL.Mappers
                 Id = categoryEntity.Id,
                 Name = categoryEntity.Name,
                 Description = categoryEntity.Description,
-                Topics = categoryEntity.Topics.Select(topic => new DalTopic
-                {
-                    Id = topic.Id,
-                    Name = topic.Name,
-                    Description = topic.Description,
-                    Posts = topic.Posts.Select(post => new DalPost
-                    {
-                        Id = post.Id,
-                        Name = post.Name,
-                        Description = post.Description,
-                        CreationTime = post.CreationTime,
-                        Creator = new DalUser
-                        {
-                            Id = post.Creator.Id,
-                            Name = post.Creator.Name
-                        }
-                    }).ToList()
-                }).ToList()
+                CreationTime = categoryEntity.CreationTime,
+                CreatorId = categoryEntity.CreatorId
             };
         }
 
@@ -42,6 +26,7 @@ namespace BLL.Mappers
                 Name = dalCategory.Name,
                 Description = dalCategory.Description,
                 CreationTime = dalCategory.CreationTime,
+                CreatorId = dalCategory.CreatorId,
                 Creator = new UserEntity
                 {
                     Id = dalCategory.Creator.Id,

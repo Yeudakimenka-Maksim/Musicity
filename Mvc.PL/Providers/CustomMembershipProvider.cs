@@ -5,7 +5,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
-using Mvc.PL.Mappers;
+using Mvc.PL.Mappers.UserPages;
 
 namespace Mvc.PL.Providers
 {

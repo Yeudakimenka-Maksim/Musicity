@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using DAL.Interface.DTO;
 using ORM.Entities;
 
@@ -9,16 +8,13 @@ namespace DAL.Mappers
     {
         public static Category ToOrmCategory(this DalCategory dalCategory)
         {
-            throw new NotImplementedException();
             return new Category
             {
                 Id = dalCategory.Id,
                 Name = dalCategory.Name,
                 Description = dalCategory.Description,
                 CreationTime = dalCategory.CreationTime,
-                CreatorId = dalCategory.CreatorId,
-                Creator = dalCategory.Creator.ToOrmUser(),
-                //Topics = dalCategory.Topics.Select(t => t.ToOrmTopic()).ToList()
+                CreatorId = dalCategory.CreatorId
             };
         }
 
@@ -30,6 +26,7 @@ namespace DAL.Mappers
                 Name = ormCategory.Name,
                 Description = ormCategory.Description,
                 CreationTime = ormCategory.CreationTime,
+                CreatorId = ormCategory.CreatorId,
                 Creator = new DalUser
                 {
                     Id = ormCategory.Creator.Id,

@@ -28,5 +28,11 @@ namespace BLL.Services
             replyRepository.Create(reply.ToDalReply());
             uow.Commit();
         }
+
+        public void DeleteReply(ReplyEntity reply)
+        {
+            replyRepository.Delete(reply.ToDalReply());
+            uow.Commit();
+        }
     }
 }

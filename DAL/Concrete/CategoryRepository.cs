@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using DAL.Interface.DTO;
 using DAL.Interface.Repositories;
@@ -23,6 +23,11 @@ namespace DAL.Concrete
             return context.Set<Category>().Select(DalCategoryMapper.ToDalCategory);
         }
 
+        public DalCategory GetById(int id)
+        {
+            return context.Set<Category>().Single(category => category.Id == id).ToDalCategory();
+        }
+
         public DalCategory GetByName(string name)
         {
             return context.Set<Category>()
@@ -37,12 +42,12 @@ namespace DAL.Concrete
 
         public void Update(DalCategory entity)
         {
-            throw new NotImplementedException();
+            context.Set<Category>().AddOrUpdate(category => category.Id, entity.ToOrmCategory());
         }
 
         public void Delete(DalCategory entity)
         {
-            throw new NotImplementedException();
+            context.Set<Category>().Remove(context.Set<Category>().Single(category => category.Id == entity.Id));
         }
     }
 }

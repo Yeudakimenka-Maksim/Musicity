@@ -129,18 +129,21 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminNavController.cs" />
     <Compile Include="Controllers\MusicityController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Infrastructure\CaptchaImage.cs" />
-    <Compile Include="Mappers\AdminPagesMapper.cs" />
-    <Compile Include="Mappers\PostPageMapper.cs" />
-    <Compile Include="Mappers\TopicPageMapper.cs" />
-    <Compile Include="Mappers\CategoriesPageMapper.cs" />
+    <Compile Include="Mappers\AdminPages\AdminPagesCategoryMapper.cs" />
+    <Compile Include="Mappers\AdminPages\AdminPagesPostMapper.cs" />
+    <Compile Include="Mappers\AdminPages\AdminPagesReplyMapper.cs" />
+    <Compile Include="Mappers\AdminPages\AdminPagesTopicMapper.cs" />
+    <Compile Include="Mappers\AdminPages\AdminPagesUserMapper.cs" />
+    <Compile Include="Mappers\UserPages\PostPageMapper.cs" />
+    <Compile Include="Mappers\UserPages\TopicPageMapper.cs" />
+    <Compile Include="Mappers\UserPages\CategoriesPageMapper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Providers\CustomMembershipProvider.cs" />
-    <Compile Include="Mappers\MembershipUserMapper.cs" />
+    <Compile Include="Mappers\UserPages\MembershipUserMapper.cs" />
     <Compile Include="Providers\CustomRoleProvider.cs" />
     <Compile Include="ViewModels\AdminPages\AdminPagesCategoryViewModel.cs" />
     <Compile Include="ViewModels\AdminPages\AdminPagesPostViewModel.cs" />
@@ -150,17 +153,10 @@
     <Compile Include="ViewModels\CreatePostPage\CreatePostPagePostViewModel.cs" />
     <Compile Include="ViewModels\CreateReplyPage\CreateReplyPageReplyViewModel.cs" />
     <Compile Include="ViewModels\CreateTopicPage\CreateTopicPageTopicViewModel.cs" />
-    <Compile Include="ViewModels\Other\CategoryViewModel.cs" />
     <Compile Include="ViewModels\CategoriesPage\CategoriesPageCategoryViewModel.cs" />
     <Compile Include="ViewModels\CategoriesPage\CategoriesPagePostViewModel.cs" />
     <Compile Include="ViewModels\CategoriesPage\CategoriesPageTopicViewModel.cs" />
     <Compile Include="ViewModels\CategoriesPage\CategoriesPageUserViewModel.cs" />
-    <Compile Include="ViewModels\Other\PostViewModel.cs" />
-    <Compile Include="ViewModels\Other\ReplyViewModel.cs" />
-    <Compile Include="ViewModels\Other\RoleViewModel.cs" />
-    <Compile Include="ViewModels\Other\TopicViewModel.cs" />
-    <Compile Include="ViewModels\Other\RegistrationViewModel.cs" />
-    <Compile Include="ViewModels\Other\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\PostPage\PostPagePostViewModel.cs" />
     <Compile Include="ViewModels\PostPage\PostPageReplyViewModel.cs" />
@@ -229,8 +225,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Musicity\Categories.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Musicity\Posts.cshtml" />
     <Content Include="Views\Shared\PostSummary.cshtml" />
     <Content Include="Views\Musicity\Replies.cshtml" />
@@ -247,6 +241,9 @@
     <Content Include="Views\Admin\Posts.cshtml" />
     <Content Include="Views\Admin\Replies.cshtml" />
     <Content Include="Views\AdminNav\Menu.cshtml" />
+    <Content Include="Views\Admin\EditCategory.cshtml" />
+    <Content Include="Views\Admin\EditTopic.cshtml" />
+    <Content Include="Views\Admin\EditPost.cshtml" />
     <None Include="Views\Admin\Users.cshtml" />
     <None Include="Views\Shared\CategorySummary.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />

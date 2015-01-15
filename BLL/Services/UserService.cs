@@ -3,7 +3,6 @@ using System.Linq;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using BLL.Mappers;
-using DAL.Interface.DTO;
 using DAL.Interface.Repositories;
 
 namespace BLL.Services
@@ -23,18 +22,12 @@ namespace BLL.Services
 
         public IEnumerable<UserEntity> GetAllUsers()
         {
-            //using (uow)
-            {
-                return userRepository.GetAll().Select(user => user.ToBllUser());
-            }
+            return userRepository.GetAll().Select(user => user.ToBllUser());
         }
 
         public UserEntity GetUserByName(string name)
         {
-            //using (uow)
-            {
-                return userRepository.GetByName(name).ToBllUser();
-            }
+            return userRepository.GetByName(name).ToBllUser();
         }
 
         public IEnumerable<UserEntity> GetUsersInRole(string role)
@@ -44,11 +37,8 @@ namespace BLL.Services
 
         public void CreateUser(UserEntity user)
         {
-            //using (uow)
-            {
-                userRepository.Create(user.ToDalUser());
-                uow.Commit();
-            }
+            userRepository.Create(user.ToDalUser());
+            uow.Commit();
         }
 
         public void DeleteUser(UserEntity user)

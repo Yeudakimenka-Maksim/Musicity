@@ -7,5 +7,6 @@ namespace BLL.Interface.Services
     {
         IEnumerable<ReplyEntity> GetAllReplies();
         void CreateReply(ReplyEntity reply);
+        void DeleteReply(ReplyEntity reply);
     }
 }

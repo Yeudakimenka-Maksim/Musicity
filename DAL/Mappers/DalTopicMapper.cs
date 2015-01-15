@@ -27,6 +27,8 @@ namespace DAL.Mappers
                 Name = ormTopic.Name,
                 Description = ormTopic.Description,
                 CreationTime = ormTopic.CreationTime,
+                CreatorId = ormTopic.CreatorId,
+                CategoryId = ormTopic.CategoryId,
                 Creator = new DalUser
                 {
                     Id = ormTopic.Creator.Id,

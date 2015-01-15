@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using DAL.Interface.DTO;
 using DAL.Interface.Repositories;
@@ -23,6 +23,11 @@ namespace DAL.Concrete
             return context.Set<Post>().Select(DalPostMapper.ToDalPost);
         }
 
+        public DalPost GetById(int id)
+        {
+            return context.Set<Post>().Single(post => post.Id == id).ToDalPost();
+        }
+
         public DalPost GetByName(string name)
         {
             return context.Set<Post>()
@@ -37,12 +42,12 @@ namespace DAL.Concrete
 
         public void Update(DalPost entity)
         {
-            throw new NotImplementedException();
+            context.Set<Post>().AddOrUpdate(post => post.Id, entity.ToOrmPost());
         }
 
         public void Delete(DalPost entity)
         {
-            throw new NotImplementedException();
+            context.Set<Post>().Remove(context.Set<Post>().Single(post => post.Id == entity.Id));
         }
     }
 }

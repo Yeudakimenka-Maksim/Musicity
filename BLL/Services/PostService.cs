@@ -20,23 +20,34 @@ namespace BLL.Services
 
         public IEnumerable<PostEntity> GetAllPosts()
         {
-            //using (uow)
-            {
-                return postRepository.GetAll().Select(BllPostMapper.ToBllPost);
-            }
+            return postRepository.GetAll().Select(BllPostMapper.ToBllPost);
+        }
+
+        public PostEntity GetPostById(int id)
+        {
+            return postRepository.GetById(id).ToBllPost();
         }
 
         public PostEntity GetPostByName(string name)
         {
-            //using (uow)
-            {
-                return postRepository.GetByName(name).ToBllPost();
-            }
+            return postRepository.GetByName(name).ToBllPost();
         }
 
         public void CreatePost(PostEntity post)
         {
             postRepository.Create(post.ToDalPost());
+            uow.Commit();
+        }
+
+        public void UpdatePost(PostEntity post)
+        {
+            postRepository.Update(post.ToDalPost());
+            uow.Commit();
+        }
+
+        public void DeletePost(PostEntity post)
+        {
+            postRepository.Delete(post.ToDalPost());
             uow.Commit();
         }
     }

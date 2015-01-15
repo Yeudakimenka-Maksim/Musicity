@@ -1,5 +1,4 @@
-﻿using System;
-using DAL.Interface.DTO;
+﻿using DAL.Interface.DTO;
 using ORM.Entities;
 
 namespace DAL.Mappers
@@ -8,13 +7,11 @@ namespace DAL.Mappers
     {
         public static Role ToOrmRole(this DalRole dalRole)
         {
-            throw new NotImplementedException();
             return new Role
             {
                 Id = dalRole.Id,
                 Name = dalRole.Name,
-                Description = dalRole.Description,
-                //Users = dalRole.Users.Select(u => u.ToOrmUser()).ToList()
+                Description = dalRole.Description
             };
         }
 

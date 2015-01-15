@@ -23,6 +23,11 @@ namespace DAL.Concrete
             return context.Set<Role>().Select(DalRoleMapper.ToDalRole);
         }
 
+        public DalRole GetById(int id)
+        {
+            return context.Set<Role>().Single(role => role.Id == id).ToDalRole();
+        }
+
         public DalRole GetByName(string name)
         {
             return context.Set<Role>()

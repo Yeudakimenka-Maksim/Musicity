@@ -26,6 +26,9 @@ namespace BLL.Mappers
                 Id = dalTopic.Id,
                 Name = dalTopic.Name,
                 Description = dalTopic.Description,
+                CreationTime = dalTopic.CreationTime,
+                CreatorId = dalTopic.CreatorId,
+                CategoryId = dalTopic.CategoryId,
                 Posts = dalTopic.Posts.Select(post => new PostEntity
                 {
                     Id = post.Id,

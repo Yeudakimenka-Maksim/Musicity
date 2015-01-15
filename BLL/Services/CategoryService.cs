@@ -20,15 +20,29 @@ namespace BLL.Services
 
         public IEnumerable<CategoryEntity> GetAllCategories()
         {
-            //using (uow)
-            {
-                return categoryRepository.GetAll().Select(BllCategoryMapper.ToBllCategory);
-            }
+            return categoryRepository.GetAll().Select(BllCategoryMapper.ToBllCategory);
+        }
+
+        public CategoryEntity GetCategoryById(int id)
+        {
+            return categoryRepository.GetById(id).ToBllCategory();
         }
 
         public CategoryEntity GetCategoryByName(string name)
         {
             return categoryRepository.GetByName(name).ToBllCategory();
+        }
+
+        public void UpdateCategory(CategoryEntity category)
+        {
+            categoryRepository.Update(category.ToDalCategory());
+            uow.Commit();
+        }
+
+        public void DeleteCategory(CategoryEntity category)
+        {
+            categoryRepository.Delete(category.ToDalCategory());
+            uow.Commit();
         }
     }
 }

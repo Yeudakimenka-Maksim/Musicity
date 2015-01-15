@@ -59,7 +59,7 @@ namespace Mvc.PL.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Register(RegisterPageRegisterViewModel model)
         {
-            if (model.Captcha != (string) Session[CaptchaImage.CaptchaValueKey])
+            if (model.Captcha != (string)Session[CaptchaImage.CaptchaValueKey])
             {
                 ModelState.AddModelError("Captcha", "Captcha text is incorrect");
                 return View(model);
@@ -73,7 +73,7 @@ namespace Mvc.PL.Controllers
 
             if (ModelState.IsValid)
             {
-                var membershipUser = ((CustomMembershipProvider) Membership.Provider).CreateUser(model.Name,
+                var membershipUser = ((CustomMembershipProvider)Membership.Provider).CreateUser(model.Name,
                     model.Password, model.DateOfBirth, DateTime.Now, DateTime.Now, model.Location, true);
                 if (membershipUser != null)
                 {

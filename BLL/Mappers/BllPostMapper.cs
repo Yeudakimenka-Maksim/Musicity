@@ -27,6 +27,8 @@ namespace BLL.Mappers
                 Name = dalPost.Name,
                 Description = dalPost.Description,
                 CreationTime = dalPost.CreationTime,
+                CreatorId = dalPost.CreatorId,
+                TopicId = dalPost.TopicId,
                 Creator = new UserEntity
                 {
                     Id = dalPost.Creator.Id,

@@ -6,7 +6,10 @@ namespace BLL.Interface.Services
     public interface ITopicService
     {
         IEnumerable<TopicEntity> GetAllTopics();
+        TopicEntity GetTopicById(int id);
         TopicEntity GetTopicByName(string name);
         void CreateTopic(TopicEntity topic);
+        void UpdateTopic(TopicEntity topic);
+        void DeleteTopic(TopicEntity topic);
     }
 }

@@ -20,18 +20,12 @@ namespace BLL.Services
 
         public IEnumerable<RoleEntity> GetAllRoles()
         {
-            //using (uow)
-            {
-                return roleRepository.GetAll().Select(role => role.ToBllRole());
-            }
+            return roleRepository.GetAll().Select(role => role.ToBllRole());
         }
 
         public RoleEntity GetRoleByName(string name)
         {
-            //using (uow)
-            {
-                return roleRepository.GetByName(name).ToBllRole();
-            }
+            return roleRepository.GetByName(name).ToBllRole();
         }
     }
 }

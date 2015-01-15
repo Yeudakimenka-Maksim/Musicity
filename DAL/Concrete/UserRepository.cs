@@ -23,6 +23,11 @@ namespace DAL.Concrete
             return context.Set<User>().Select(DalUserMapper.ToDalUser);
         }
 
+        public DalUser GetById(int id)
+        {
+            return context.Set<User>().Single(user => user.Id == id).ToDalUser();
+        }
+
         public DalUser GetByName(string name)
         {
             return context.Set<User>()
