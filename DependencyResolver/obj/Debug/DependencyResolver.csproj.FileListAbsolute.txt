@@ -29,6 +29,9 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyRe
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\Ninject.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\Ninject.Web.Common.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\ORM.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.Helpers.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\BLL.Interface.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\BLL.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\DAL.Interface.pdb
@@ -37,12 +40,36 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyRe
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\EntityFramework.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\Ninject.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\Ninject.Web.Common.xml
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.pdb
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.Helpers.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.Helpers.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\DependencyResolver\obj\Debug\DependencyResolver.pdb
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\DependencyResolver.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\DependencyResolver.pdb
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\BLL.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\BLL.Interface.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\DAL.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\DAL.Interface.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\EntityFramework.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\Ninject.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\ORM.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\System.Web.Helpers.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\BLL.Interface.pdb
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\BLL.pdb
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\DAL.Interface.pdb
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\DAL.pdb
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\ORM.pdb
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\EntityFramework.xml
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\Ninject.xml
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\System.Web.Helpers.xml
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.xml
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\obj\Debug\DependencyResolver.dll
+C:\Users\Максим\Desktop\Musicity\DependencyResolver\obj\Debug\DependencyResolver.pdb

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Helpers;
-using System.Web.Mvc;
 using System.Web.Security;
 using BLL.Interface.Entities;
 using BLL.Interface.Services;
 using Mvc.PL.Mappers.UserPages;
+using Ninject;
 
 namespace Mvc.PL.Providers
 {
@@ -16,8 +16,8 @@ namespace Mvc.PL.Providers
 
         public CustomMembershipProvider()
         {
-            roleService = System.Web.Mvc.DependencyResolver.Current.GetService<IRoleService>();
-            userService = System.Web.Mvc.DependencyResolver.Current.GetService<IUserService>();
+            roleService = NinjectWebCommon.GetKernel().Get<IRoleService>();
+            userService = NinjectWebCommon.GetKernel().Get<IUserService>();
         }
 
         public MembershipUser CreateUser(string name, string password, DateTime? dateOfBirth, DateTime joinDate,

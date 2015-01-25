@@ -9,13 +9,11 @@ namespace BLL.Services
 {
     public class UserService : IUserService
     {
-        private readonly IRoleRepository roleRepository;
         private readonly IUnitOfWork uow;
         private readonly IUserRepository userRepository;
 
-        public UserService(IRoleRepository roleRepository, IUnitOfWork uow, IUserRepository userRepository)
+        public UserService(IUnitOfWork uow, IUserRepository userRepository)
         {
-            this.roleRepository = roleRepository;
             this.uow = uow;
             this.userRepository = userRepository;
         }

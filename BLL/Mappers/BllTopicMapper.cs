@@ -21,28 +21,30 @@ namespace BLL.Mappers
 
         public static TopicEntity ToBllTopic(this DalTopic dalTopic)
         {
-            return new TopicEntity
-            {
-                Id = dalTopic.Id,
-                Name = dalTopic.Name,
-                Description = dalTopic.Description,
-                CreationTime = dalTopic.CreationTime,
-                CreatorId = dalTopic.CreatorId,
-                CategoryId = dalTopic.CategoryId,
-                Posts = dalTopic.Posts.Select(post => new PostEntity
+            return dalTopic == null
+                ? null
+                : new TopicEntity
                 {
-                    Id = post.Id,
-                    Name = post.Name,
-                    Description = post.Description,
-                    CreationTime = post.CreationTime,
-                    Creator = new UserEntity
+                    Id = dalTopic.Id,
+                    Name = dalTopic.Name,
+                    Description = dalTopic.Description,
+                    CreationTime = dalTopic.CreationTime,
+                    CreatorId = dalTopic.CreatorId,
+                    CategoryId = dalTopic.CategoryId,
+                    Posts = dalTopic.Posts.Select(post => new PostEntity
                     {
-                        Id = post.Creator.Id,
-                        Name = post.Creator.Name
-                    },
-                    Replies = post.Replies.Select(reply => new ReplyEntity()).ToList()
-                }).ToList()
-            };
+                        Id = post.Id,
+                        Name = post.Name,
+                        Description = post.Description,
+                        CreationTime = post.CreationTime,
+                        Creator = new UserEntity
+                        {
+                            Id = post.Creator.Id,
+                            Name = post.Creator.Name
+                        },
+                        Replies = post.Replies.Select(reply => new ReplyEntity()).ToList()
+                    }).ToList()
+                };
         }
     }
 }

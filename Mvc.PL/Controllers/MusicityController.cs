@@ -75,6 +75,12 @@ namespace Mvc.PL.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (topicService.GetTopicByName(model.Name) != null)
+                {
+                    TempData["message"] = "Topic with this name already exists";
+                    return View();
+                }
+
                 topicService.CreateTopic(new TopicEntity
                 {
                     Name = model.Name,

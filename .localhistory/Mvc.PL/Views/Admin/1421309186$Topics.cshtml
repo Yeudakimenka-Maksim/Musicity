@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Mvc.PL.ViewModels.AdminPages.AdminPagesTopicViewModel>
+
+@{
+    ViewBag.Title = "Musicity - Admin pages";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="Grid">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Creation Time</th>
+        <th>Created by</th>
+        <th>Belongs to Category</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var topic in Model)
+    {
+        <tr>
+            <td>@topic.Name</td>
+            <td>@topic.Description</td>
+            <td>@topic.CreationTime.ToShortDateString()</td>
+            <td>@topic.Creator.Name</td>
+            <td>@topic.Category.Name</td>
+            <td>
+                @using (Html.BeginForm("DeleteTopic", "Admin"))
+                {
+                    @Html.Hidden("id", topic.Id)
+                    <input type="submit" value="Delete"/>
+                }
+            </td>
+        </tr>
+    }
+</table>
+
+<p>@Html.ActionLink("Add a new Topic", "CreateTopic")</p>

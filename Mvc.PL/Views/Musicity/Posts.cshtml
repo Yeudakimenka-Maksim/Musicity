@@ -7,9 +7,12 @@
 {
     <fieldset>
         <legend>@Model.Name</legend>
-        @foreach (var post in Model.Posts)
+        @if (Model.Posts != null)
         {
-            @Html.Partial("PostSummary", post)
+            foreach (var post in Model.Posts)
+            {
+                @Html.Partial("PostSummary", post)
+            }
         }
         @if (HttpContext.Current.User.Identity.IsAuthenticated)
         {

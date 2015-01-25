@@ -3,32 +3,31 @@ using BLL.Interface.Services;
 using BLL.Services;
 using DAL.Concrete;
 using DAL.Interface.Repositories;
-using Ninject.Modules;
+using Ninject;
 using ORM.Context;
 
 namespace DependencyResolver
 {
-    public class ResolverModule : NinjectModule
+    public static class ResolverModule
     {
-        public override void Load()
+        public static void Configure(this IKernel kernel)
         {
-            Bind<DbContext>().To<ForumContext>().InSingletonScope();
+            kernel.Bind<DbContext>().To<ForumContext>().InSingletonScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
 
-            Bind<IUnitOfWork>().To<UnitOfWork>();
+            kernel.Bind<ICategoryRepository>().To<CategoryRepository>();
+            kernel.Bind<ITopicRepository>().To<TopicRepository>();
+            kernel.Bind<IPostRepository>().To<PostRepository>();
+            kernel.Bind<IReplyRepository>().To<ReplyRepository>();
+            kernel.Bind<IUserRepository>().To<UserRepository>();
+            kernel.Bind<IRoleRepository>().To<RoleRepository>();
 
-            Bind<ICategoryRepository>().To<CategoryRepository>();
-            Bind<ITopicRepository>().To<TopicRepository>();
-            Bind<IPostRepository>().To<PostRepository>();
-            Bind<IReplyRepository>().To<ReplyRepository>();
-            Bind<IUserRepository>().To<UserRepository>();
-            Bind<IRoleRepository>().To<RoleRepository>();
-
-            Bind<ICategoryService>().To<CategoryService>();
-            Bind<ITopicService>().To<TopicService>();
-            Bind<IPostService>().To<PostService>();
-            Bind<IReplyService>().To<ReplyService>();
-            Bind<IUserService>().To<UserService>();
-            Bind<IRoleService>().To<RoleService>();
+            kernel.Bind<ICategoryService>().To<CategoryService>();
+            kernel.Bind<ITopicService>().To<TopicService>();
+            kernel.Bind<IPostService>().To<PostService>();
+            kernel.Bind<IReplyService>().To<ReplyService>();
+            kernel.Bind<IUserService>().To<UserService>();
+            kernel.Bind<IRoleService>().To<RoleService>();
         }
     }
 }

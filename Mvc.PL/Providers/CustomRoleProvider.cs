@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using System.Web.Mvc;
 using System.Web.Security;
 using BLL.Interface.Services;
+using Ninject;
 
 namespace Mvc.PL.Providers
 {
@@ -12,7 +12,7 @@ namespace Mvc.PL.Providers
 
         public CustomRoleProvider()
         {
-            userService = System.Web.Mvc.DependencyResolver.Current.GetService<IUserService>();
+            userService = NinjectWebCommon.GetKernel().Get<IUserService>();
         }
 
         public override bool IsUserInRole(string username, string roleName)

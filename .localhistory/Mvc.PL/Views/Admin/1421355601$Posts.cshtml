@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Mvc.PL.ViewModels.AdminPages.AdminPagesPostViewModel>
+
+@{
+    ViewBag.Title = "Musicity - Admin pages";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="Grid">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Creation Time</th>
+        <th>Created by</th>
+        <th>Belongs to Topic</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var post in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(post.Name, "EditPost", new { post.Id })</td>
+            <td>@post.Description</td>
+            <td>@post.CreationTime.ToShortDateString()</td>
+            <td>@post.Creator.Name</td>
+            <td>@post.Topic.Name</td>
+            <td>
+                @using (Html.BeginForm("DeletePost", "Admin"))
+                {
+                    @Html.Hidden("id", post.Id)
+                    <input type="submit" value="Delete" />
+                }
+            </td>
+        </tr>
+    }
+</table>
+
+<p>@Html.ActionLink("+ New Post", "CreatePost", null, new { style = "background-color:#333;border:1px solid black;color:White;line-height:4.5em;padding:0.4em 1em;text-decoration:none;" })</p>

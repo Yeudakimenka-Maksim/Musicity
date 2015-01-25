@@ -9,14 +9,21 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\BLL\obj\Debug\BLL.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\BLL\bin\Debug\EntityFramework.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Проект\Project\BLL\bin\Debug\EntityFramework.xml
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\obj\Debug\BLL.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\BLL.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\BLL.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\BLL.Interface.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\DAL.Interface.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\EntityFramework.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\BLL.Interface.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\DAL.Interface.pdb
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\bin\Debug\EntityFramework.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\obj\Debug\BLL.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL\obj\Debug\BLL.pdb
+C:\Users\Максим\Desktop\Musicity\BLL\bin\Debug\BLL.dll
+C:\Users\Максим\Desktop\Musicity\BLL\bin\Debug\BLL.pdb
+C:\Users\Максим\Desktop\Musicity\BLL\bin\Debug\BLL.Interface.dll
+C:\Users\Максим\Desktop\Musicity\BLL\bin\Debug\DAL.Interface.dll
+C:\Users\Максим\Desktop\Musicity\BLL\bin\Debug\BLL.Interface.pdb
+C:\Users\Максим\Desktop\Musicity\BLL\bin\Debug\DAL.Interface.pdb
+C:\Users\Максим\Desktop\Musicity\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Максим\Desktop\Musicity\BLL\obj\Debug\BLL.dll
+C:\Users\Максим\Desktop\Musicity\BLL\obj\Debug\BLL.pdb

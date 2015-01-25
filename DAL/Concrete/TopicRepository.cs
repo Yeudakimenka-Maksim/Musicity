@@ -13,7 +13,7 @@ namespace DAL.Concrete
     {
         private readonly DbContext context;
 
-        public TopicRepository(IUnitOfWork uow)
+        public TopicRepository(UnitOfWork uow)
         {
             context = uow.Context;
         }
@@ -31,7 +31,7 @@ namespace DAL.Concrete
         public DalTopic GetByName(string name)
         {
             return context.Set<Topic>()
-                .Single(topic => topic.Name.ToLower() == name.ToLower())
+                .SingleOrDefault(topic => topic.Name.ToLower() == name.ToLower())
                 .ToDalTopic();
         }
 

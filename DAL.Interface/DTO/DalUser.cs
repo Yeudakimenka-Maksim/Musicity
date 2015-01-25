@@ -5,6 +5,7 @@ namespace DAL.Interface.DTO
 {
     public class DalUser : IEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public DateTime? DateOfBirth { get; set; }
@@ -17,6 +18,5 @@ namespace DAL.Interface.DTO
         public ICollection<DalPost> Posts { get; set; }
         public ICollection<DalReply> Replies { get; set; }
         public ICollection<DalRole> Roles { get; set; }
-        public int Id { get; set; }
     }
 }

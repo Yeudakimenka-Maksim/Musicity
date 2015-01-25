@@ -7,3 +7,7 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL.Interfac
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL.Interface\bin\Debug\BLL.Interface.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL.Interface\obj\Debug\BLL.Interface.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\BLL.Interface\obj\Debug\BLL.Interface.pdb
+C:\Users\Максим\Desktop\Musicity\BLL.Interface\bin\Debug\BLL.Interface.dll
+C:\Users\Максим\Desktop\Musicity\BLL.Interface\bin\Debug\BLL.Interface.pdb
+C:\Users\Максим\Desktop\Musicity\BLL.Interface\obj\Debug\BLL.Interface.dll
+C:\Users\Максим\Desktop\Musicity\BLL.Interface\obj\Debug\BLL.Interface.pdb

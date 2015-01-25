@@ -14,17 +14,34 @@ E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debu
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\ORM.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\EntityFramework.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\EntityFramework.SqlServer.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.Helpers.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.dll
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.Deployment.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\EntityFramework.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\EntityFramework.SqlServer.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.Helpers.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.xml
+E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.Deployment.xml
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\obj\Debug\ORM.Migrations.InitialCreate.resources
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\obj\Debug\ORM.Migrations.AddedCreationTime.resources
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\obj\Debug\ORM.csproj.GenerateResource.Cache
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\obj\Debug\ORM.dll
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\obj\Debug\ORM.pdb
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.Helpers.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.Deployment.dll
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.Helpers.xml
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.xml
-E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\ORM.dll
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\ORM.pdb
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\EntityFramework.dll
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\System.Web.Helpers.dll
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\System.Web.WebPages.dll
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\EntityFramework.xml
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\System.Web.Helpers.xml
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\System.Web.WebPages.xml
+C:\Users\Максим\Desktop\Musicity\ORM\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Максим\Desktop\Musicity\ORM\obj\Debug\ORM.Migrations.InitialCreate.resources
+C:\Users\Максим\Desktop\Musicity\ORM\obj\Debug\ORM.Migrations.AddedCreationTime.resources
+C:\Users\Максим\Desktop\Musicity\ORM\obj\Debug\ORM.csproj.GenerateResource.Cache
+C:\Users\Максим\Desktop\Musicity\ORM\obj\Debug\ORM.dll
+C:\Users\Максим\Desktop\Musicity\ORM\obj\Debug\ORM.pdb
 E:\Курсы\EPAM\ASP.NET MVC Training. Autumn 2014\Tasks\Musicity\ORM\obj\Debug\ORM.csprojResolveAssemblyReference.cache
