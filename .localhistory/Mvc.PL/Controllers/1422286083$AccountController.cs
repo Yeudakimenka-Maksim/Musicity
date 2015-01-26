@@ -59,7 +59,7 @@ namespace Mvc.PL.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Register(RegisterPageRegisterViewModel model)
         {
-            if (model.Captcha != (string) Session[CaptchaImage.CaptchaValueKey])
+            if (model.Captcha != (string)Session[CaptchaImage.CaptchaValueKey])
             {
                 ModelState.AddModelError("Captcha", "Captcha text is incorrect");
                 return View(model);
@@ -73,10 +73,8 @@ namespace Mvc.PL.Controllers
 
             if (ModelState.IsValid)
             {
-                var membershipUser = ((CustomMembershipProvider) Membership.Provider).CreateUser(
-                    model.Name, model.Password,
-                    model.DateOfBirth != null ? ((DateTime) model.DateOfBirth).ToUniversalTime() : (DateTime?) null,
-                    DateTime.Now.ToUniversalTime(), DateTime.Now.ToUniversalTime(), model.Location, true);
+                var membershipUser = ((CustomMembershipProvider)Membership.Provider).CreateUser(model.Name,
+                    model.Password, model.DateOfBirth, DateTime.Now, DateTime.Now, model.Location, true);
                 if (membershipUser != null)
                 {
                     FormsAuthentication.SetAuthCookie(model.Name, false);
@@ -98,8 +96,7 @@ namespace Mvc.PL.Controllers
         {
             Session[CaptchaImage.CaptchaValueKey] =
                 new Random(DateTime.Now.Millisecond).Next(1111, 9999).ToString(CultureInfo.InvariantCulture);
-            using (
-                var captcha = new CaptchaImage(Session[CaptchaImage.CaptchaValueKey].ToString(), 211, 50, "Helvetica"))
+            using (var captcha = new CaptchaImage(Session[CaptchaImage.CaptchaValueKey].ToString(), 211, 50, "Helvetica"))
             {
                 Response.Clear();
                 Response.ContentType = "image/jpeg";

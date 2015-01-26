@@ -56,7 +56,7 @@ namespace Mvc.PL.Controllers
             {
                 replyService.CreateReply(new ReplyEntity
                 {
-                    WrittenTime = DateTime.Now.ToUniversalTime(),
+                    WrittenTime = DateTime.Now,
                     Content = model.Content,
                     PostId = postService.GetPostByName(post).Id,
                     WriterId = userService.GetUserByName(User.Identity.Name).Id
@@ -85,7 +85,7 @@ namespace Mvc.PL.Controllers
                 {
                     Name = model.Name,
                     Description = model.Description,
-                    CreationTime = DateTime.Now.ToUniversalTime(),
+                    CreationTime = DateTime.Now,
                     CreatorId = userService.GetUserByName(User.Identity.Name).Id,
                     CategoryId = categoryService.GetCategoryByName(category).Id
                 });
@@ -107,7 +107,7 @@ namespace Mvc.PL.Controllers
                 {
                     Name = model.Name,
                     Description = model.Description,
-                    CreationTime = DateTime.Now.ToUniversalTime(),
+                    CreationTime = DateTime.Now,
                     CreatorId = userService.GetUserByName(User.Identity.Name).Id,
                     TopicId = topicService.GetTopicByName(topic).Id
                 });

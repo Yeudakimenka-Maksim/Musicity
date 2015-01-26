@@ -75,7 +75,7 @@ namespace Mvc.PL.Controllers
             {
                 var membershipUser = ((CustomMembershipProvider) Membership.Provider).CreateUser(
                     model.Name, model.Password,
-                    model.DateOfBirth != null ? ((DateTime) model.DateOfBirth).ToUniversalTime() : (DateTime?) null,
+                    model.DateOfBirth == null ? (DateTime?) null : ((DateTime) model.DateOfBirth).ToUniversalTime(),
                     DateTime.Now.ToUniversalTime(), DateTime.Now.ToUniversalTime(), model.Location, true);
                 if (membershipUser != null)
                 {
